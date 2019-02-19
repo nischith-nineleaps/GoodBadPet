@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "20809dde-e90e-4b07-a878-b3947cbaf7aa",
+		"name": "pet-buddy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve all pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/pets",
+					"protocol": "http",
+					"host": [
+						"ec2-3-91-83-117",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update liked status of a pet",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"liked\": false\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/pets/likes/5c5c3199b6875b015e814a82",
+					"protocol": "http",
+					"host": [
+						"ec2-3-91-83-117",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"pets",
+						"likes",
+						"5c5c3199b6875b015e814a82"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liked pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/pets/likes",
+					"protocol": "http",
+					"host": [
+						"ec2-3-91-83-117",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"pets",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log out",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/logout",
+					"protocol": "http",
+					"host": [
+						"ec2-3-91-83-117",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"JohnDoe\",\n\t\"password\": \"nineleaps\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/login",
+					"protocol": "http",
+					"host": [
+						"ec2-3-91-83-117",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
