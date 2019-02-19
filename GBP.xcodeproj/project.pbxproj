@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1245CC311737F7F4811A7736 /* Pods_GBP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616861B166953D076C672467 /* Pods_GBP.framework */; };
 		E800847B2213E900007F9561 /* LikedPetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800847A2213E900007F9561 /* LikedPetsTableViewController.swift */; };
+		E800FC74221C13A200E9CD6C /* GBPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800FC73221C13A200E9CD6C /* GBPTests.swift */; };
 		E802F85922117D3300CC4078 /* tokenSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E802F85822117D3300CC4078 /* tokenSaver.swift */; };
 		E803243D2216CE3900776C99 /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E803243C2216CE3900776C99 /* AlamofireWrapper.swift */; };
 		E815D99B2212D9A4000E43D6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D99A2212D9A4000E43D6 /* Card.swift */; };
@@ -23,11 +24,24 @@
 		E8CC446222128F3800A157A8 /* imageRetreival.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CC446122128F3800A157A8 /* imageRetreival.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E800FC76221C13A200E9CD6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E849F4EF220EB12300938585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E849F4F6220EB12300938585;
+			remoteInfo = GBP;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		57AE94A6BDC35D52B6BA4531 /* Pods-GBP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBP.debug.xcconfig"; path = "Target Support Files/Pods-GBP/Pods-GBP.debug.xcconfig"; sourceTree = "<group>"; };
 		616861B166953D076C672467 /* Pods_GBP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECFE02D3FA7F2C2FC01AF2E /* Pods-GBP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBP.release.xcconfig"; path = "Target Support Files/Pods-GBP/Pods-GBP.release.xcconfig"; sourceTree = "<group>"; };
 		E800847A2213E900007F9561 /* LikedPetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPetsTableViewController.swift; sourceTree = "<group>"; };
+		E800FC71221C13A200E9CD6C /* GBPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E800FC73221C13A200E9CD6C /* GBPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPTests.swift; sourceTree = "<group>"; };
+		E800FC75221C13A200E9CD6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E802F85822117D3300CC4078 /* tokenSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tokenSaver.swift; sourceTree = "<group>"; };
 		E803243C2216CE3900776C99 /* AlamofireWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireWrapper.swift; sourceTree = "<group>"; };
 		E815D99A2212D9A4000E43D6 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = "../../Poi-master 2/Example/View/Card.swift"; sourceTree = "<group>"; };
@@ -45,6 +59,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E800FC6E221C13A200E9CD6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E849F4F4220EB12300938585 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,10 +94,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E800FC72221C13A200E9CD6C /* GBPTests */ = {
+			isa = PBXGroup;
+			children = (
+				E800FC73221C13A200E9CD6C /* GBPTests.swift */,
+				E800FC75221C13A200E9CD6C /* Info.plist */,
+			);
+			path = GBPTests;
+			sourceTree = "<group>";
+		};
 		E849F4EE220EB12300938585 = {
 			isa = PBXGroup;
 			children = (
 				E849F4F9220EB12300938585 /* GBP */,
+				E800FC72221C13A200E9CD6C /* GBPTests */,
 				E849F4F8220EB12300938585 /* Products */,
 				5AD4FE10DD0A39049F1855F3 /* Pods */,
 				0076706AC248FE9E6B0217B8 /* Frameworks */,
@@ -87,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E849F4F7220EB12300938585 /* GBP.app */,
+				E800FC71221C13A200E9CD6C /* GBPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +147,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E800FC70221C13A200E9CD6C /* GBPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E800FC7A221C13A200E9CD6C /* Build configuration list for PBXNativeTarget "GBPTests" */;
+			buildPhases = (
+				E800FC6D221C13A200E9CD6C /* Sources */,
+				E800FC6E221C13A200E9CD6C /* Frameworks */,
+				E800FC6F221C13A200E9CD6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E800FC77221C13A200E9CD6C /* PBXTargetDependency */,
+			);
+			name = GBPTests;
+			productName = GBPTests;
+			productReference = E800FC71221C13A200E9CD6C /* GBPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E849F4F6220EB12300938585 /* GBP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E849F509220EB12400938585 /* Build configuration list for PBXNativeTarget "GBP" */;
@@ -144,6 +194,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Nineleaps;
 				TargetAttributes = {
+					E800FC70221C13A200E9CD6C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E849F4F6220EB12300938585;
+					};
 					E849F4F6220EB12300938585 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -163,11 +217,19 @@
 			projectRoot = "";
 			targets = (
 				E849F4F6220EB12300938585 /* GBP */,
+				E800FC70221C13A200E9CD6C /* GBPTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E800FC6F221C13A200E9CD6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E849F4F5220EB12300938585 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +303,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E800FC6D221C13A200E9CD6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E800FC74221C13A200E9CD6C /* GBPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E849F4F3220EB12300938585 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +328,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E800FC77221C13A200E9CD6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E849F4F6220EB12300938585 /* GBP */;
+			targetProxy = E800FC76221C13A200E9CD6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E849F4FE220EB12300938585 /* Main.storyboard */ = {
@@ -279,6 +357,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E800FC78221C13A200E9CD6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nineleaps.GBPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBP.app/GBP";
+			};
+			name = Debug;
+		};
+		E800FC79221C13A200E9CD6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nineleaps.GBPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBP.app/GBP";
+			};
+			name = Release;
+		};
 		E849F507220EB12400938585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -434,6 +550,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E800FC7A221C13A200E9CD6C /* Build configuration list for PBXNativeTarget "GBPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E800FC78221C13A200E9CD6C /* Debug */,
+				E800FC79221C13A200E9CD6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E849F4F2220EB12300938585 /* Build configuration list for PBXProject "GBP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

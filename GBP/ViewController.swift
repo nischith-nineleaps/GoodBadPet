@@ -58,10 +58,9 @@ class ViewController: UIViewController {
 //        userName.text = "JohnDoe"
 //        pwd.text = "nineleaps"
         let parameters: [String: Any] = [ "username" : userName.text! , "password" :  pwd.text!]
-     //   let urlString = URL(string: "http://ec2-3-91-83-117.compute-1.amazonaws.com:3000/login")
         let alamofire = AlamofireWrapper()
         alamofire.callAlamofireTokenResponse(nameOfOperation: "login", parameters: parameters, headers: nil) { (response) -> (Void) in
-            print("STATUS CODE:\(response.response?.statusCode)")
+           
             if response.response?.statusCode == 200
             {
                 let tokenStorage = response.result.value
@@ -72,7 +71,7 @@ class ViewController: UIViewController {
                     self.performSegue(withIdentifier: "SegueToMainPage" , sender: ViewController.self)
                 }
             }
-            else if response.response?.statusCode != 404
+            else if response.response?.statusCode == 404
             {
                 self.displayLoginAlert(title: "Login Failed", message: "Invalid credentials. Please try again.")
             }
@@ -89,9 +88,5 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-    
-    //POI CODE STARTS HERE
-    
-    
     
 }
