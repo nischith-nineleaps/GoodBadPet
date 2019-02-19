@@ -71,16 +71,15 @@ class ViewController: UIViewController {
                 {
                     self.performSegue(withIdentifier: "SegueToMainPage" , sender: ViewController.self)
                 }
-                
             }
-            else // response.response?.statusCode != 200
+            else if response.response?.statusCode != 404
             {
                 self.displayLoginAlert(title: "Login Failed", message: "Invalid credentials. Please try again.")
             }
-//            else if response.response?.statusCode == 400
-//            {
-//                self.displayLoginAlert(title: "Login Failed", message: "Incorrect username. User does not exist. Please try again.")
-//            }
+            else if response.response?.statusCode == 400
+            {
+                self.displayLoginAlert(title: "Login Failed", message: "Incorrect username. User does not exist. Please try again.")
+            }
         }
     }
     
@@ -88,7 +87,7 @@ class ViewController: UIViewController {
     {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-        self.present(self, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
     }
     
     //POI CODE STARTS HERE
